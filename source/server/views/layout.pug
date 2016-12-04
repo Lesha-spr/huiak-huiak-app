@@ -1,0 +1,21 @@
+doctype html
+html(lang="uk-UA")
+    head
+        title Huiak-huiak app
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic")
+        if isProd
+            link(rel="stylesheet" href=`/client/main.css`)
+    body
+        block content
+        script(defer src=`//unpkg.com/react@15/dist/react${isProd ? '.min' : ''}.js`)
+        script(defer src=`//unpkg.com/react-dom@15/dist/react-dom${isProd ? '.min' : ''}.js`)
+        script(defer src=`//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash${isProd ? '.min' : ''}.js`)
+        script(defer src=`//cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux${isProd ? '.min' : ''}.js`)
+        script(defer src=`//cdnjs.cloudflare.com/ajax/libs/react-redux/4.4.6/react-redux${isProd ? '.min' : ''}.js`)
+        script(defer src=`//cdnjs.cloudflare.com/ajax/libs/react-router/4.0.0-0/react-router${isProd ? '.min' : ''}.js`)
+        script(defer src=`//cdnjs.cloudflare.com/ajax/libs/react-router-redux/4.0.7/ReactRouterRedux${isProd ? '.min' : ''}.js`)
+        script(defer src=`/client/common.js`)
+        script(defer src=`/client/vendor.js`)
+        script(defer src=`/client/main.js`)

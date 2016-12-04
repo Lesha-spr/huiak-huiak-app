@@ -1,0 +1,6 @@
+@import "./../../node_modules/foundation-sites/scss/foundation";
+
+$global-flexbox: true;
+$body-font-family: 'Roboto', sans-serif;
+
+@include foundation-global-styles;

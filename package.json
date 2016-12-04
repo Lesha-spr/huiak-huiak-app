@@ -1,0 +1,86 @@
+{
+  "name": "express-react-redux",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Oleksii An",
+  "scripts": {
+    "start": "webpack --config ./webpack/webpack.config.build && webpack --config ./webpack/webpack.config.server && node ./bin/www",
+    "test": "jest",
+    "dev": "nodemon ./bin/www --exec babel-node",
+    "build": "webpack --config ./webpack/webpack.config.build && webpack --config ./webpack/webpack.config.server"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.5.0",
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^7.1.0",
+    "babel-jest": "^16.0.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-decorators": "^6.13.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "css-loader": "^0.25.0",
+    "css-modules-require-hook": "^4.0.5",
+    "debug": "~2.2.0",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-loader": "^1.5.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.3.0",
+    "express": "~4.13.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "foundation-sites": "^6.2.4",
+    "gulp-util": "^3.0.7",
+    "jest-cli": "^16.0.1",
+    "lodash": "^4.16.4",
+    "material-ui": "^0.16.4",
+    "morgan": "~1.7.0",
+    "node-sass": "^3.10.1",
+    "postcss-loader": "^0.13.0",
+    "pug": "^2.0.0-beta6",
+    "react": "^15.4.1",
+    "react-css-modules": "^3.7.10",
+    "react-dom": "^15.4.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "react-router-redux": "^4.0.6",
+    "react-tap-event-plugin": "^2.0.0",
+    "react-validation": "^2.10.8",
+    "redux": "^3.6.0",
+    "resolve-url-loader": "^1.6.0",
+    "sass-loader": "^4.0.2",
+    "serve-favicon": "~2.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-node-externals": "^1.5.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.1",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.12.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "testPathDirs": [
+      "<rootDir>/public/src/"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "^.+\\.(css|scss|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
+}
