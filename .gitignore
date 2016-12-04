@@ -151,3 +151,5 @@ Temporary Items
 
 # Build
 *build/
+
+*.idea/
