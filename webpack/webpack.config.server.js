@@ -37,7 +37,7 @@ module.exports = {
         }
     },
 
-    plugins: [require('./plugins/extract-text-server')],
+    plugins: [require('./plugins/extract-text')],
 
     module: {
         preLoaders: require('./preloaders'),
@@ -55,5 +55,5 @@ module.exports = {
 };
 
 Array.prototype.push.apply(module.exports.module.loaders, [
-    require('./loaders/extract-text-build')
+    require('./loaders/scss-build')
 ]);

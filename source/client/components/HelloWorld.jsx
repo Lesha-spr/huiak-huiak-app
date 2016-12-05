@@ -11,5 +11,3 @@ const HelloWorld = () => (
 );
 
 export default cssModules(HelloWorld, styles);
-
-// export default HelloWorld;

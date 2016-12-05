@@ -31,7 +31,7 @@ module.exports = Object.assign({}, require('./webpack.config.base'), {
 });
 
 Array.prototype.push.apply(module.exports.module.loaders, [
-    require('./loaders/extract-text-build')
+    require('./loaders/scss-build')
 ]);
 
 Array.prototype.push.apply(module.exports.plugins, [
